@@ -1,0 +1,943 @@
+*{
+    margin: 0;
+}
+#entire-body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png");
+    background-size: cover;
+    background-position: center, center;
+    
+}
+/*header*/
+#top-nav{
+    background-color: white;
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+    height: 8vh;
+}
+#logo img{
+    width: 6.2vh;
+    height: 6vh;
+    margin-left: 1vw;
+    padding: 0.5vh;
+}
+#topnav-links{
+    padding-top: 2.5vh;
+}
+#topnav-links span{
+    margin-right: 2.2vw;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+#topnav-links span:hover{
+    cursor: pointer;
+}
+#topnav-button{
+    background-color: rgb(170, 210, 54);
+    color: white;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 0.2rem;
+}
+#drop-down{
+    visibility: hidden;
+    width:14vw ;
+    height: 23vh;
+    background-color: white;
+    border-top: 2px solid rgb(170, 210, 54) ;
+    box-shadow: 0px 2px 8px lightgray;
+    position: absolute;
+    left: 56vw;
+}
+#drop-down p{
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    margin-left: 2vw;   
+    position: relative;
+    top: 25%;
+    padding: 1vh 0vw;
+    color: rgb(22, 22, 22);
+}
+#second-menu-item{
+    width: 10vw;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-left: 0.8vw;
+}
+#dropdown-icon:hover~#drop-down{
+    visibility: visible;
+}
+#drop-down:hover{
+    cursor: pointer;
+    visibility: visible;
+}
+/*first section*/
+#first-section {
+    text-align: center;
+    position: relative;
+    top: 25vh;
+    height: 100vh;
+    width: 95vw;
+}
+#first-section h1{
+    margin-top: 5rem;
+    letter-spacing: 0.6rem;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 10vw;
+    margin-right: 7vw;
+}
+#first-section p{
+    padding-top: 2.5rem;
+    font-size: 1.2rem;
+    color: gray;
+    margin-left: 8vw;
+    margin-right: 6vw;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+/*second section*/
+
+#card1{
+    background-color: #5acda6;
+    padding: 15vh 10vh 20vh 10vh;
+}
+#card2{
+    background-color: #91ac41;
+    padding: 15vh 10vh 20vh 10vh;
+}
+#card3{
+    background-color:  #e4b476;
+    padding: 15vh 10vh 20vh 10vh;
+    
+}
+#card4{
+    background-color: #f69dad;
+    padding: 15vh 10vh 20vh 10vh;
+}
+#section-2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 92vh;
+    color: white;
+    text-align: center; 
+}
+#section-2 div h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 5vh 0vh;
+}
+#section-2 div p{
+    font-family:Poppins,sans-serif;
+    font-size: 1rem;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+#card1:hover #scissor{
+    transform: scale(1.1,1.1);
+    transition : all 0.3s;
+}
+#card2:hover #brush{
+    transform:scale(1.1 ,1.1);
+    transition: all 0.3s;
+}
+#card3:hover #bag{
+    transform:scale(1.1,1.1);
+    transition: all  0.3s;
+}
+#card4:hover #smile{
+    transform:scale(1.1 ,1.1);
+    transition: all 0.3s;
+}
+/*third section*/
+#section-3{
+    height: 120vh;
+    background-color: #f7eee2;
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+.description{
+    text-align: center;
+}
+
+.heading{
+    color: #91ac41;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: 'Caveat', cursive;
+    padding-top: 7rem;
+    padding-bottom: 0.6rem;
+}
+.description h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    padding-bottom: 0.8rem; 
+}
+#definition{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 0.1rem 7rem 0rem 7rem;
+    text-align: center;
+    
+}
+#definition i{
+    background-color:  #e3b375;
+    color: white;
+    padding: 2.5rem;
+    border-radius: 50% 50%;
+}
+#definition h1{
+    padding: 1.5rem 0rem 2rem 0rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#definition p{
+    font-family: sans-serif;
+    color:  #8b8b99;
+    letter-spacing: 0.5px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+}
+#card31:hover i{
+    transition-timing-function: ease;
+    transform: scale(1.1,1.1);
+    transition : all 0.3s;
+}
+#card32:hover i{
+    transition-timing-function: ease;
+    transform:scale(1.1 ,1.1);
+    transition: all 0.3s;
+}
+#card33:hover i{
+    transition-timing-function:ease;
+    transform:scale(1.1,1.1);
+    transition: all  0.3s;
+}
+#card34:hover i{
+    transition-timing-function: ease;
+    transform:scale(1.1 ,1.1);
+    transition: all 0.3s;
+}
+/*fourth section*/
+#section-4{
+    background-color: white;
+    height: 125vh;
+    display: grid;
+    grid-template-rows: 35% 60%;
+}
+#testimonials{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    margin-left: 8rem;
+    margin-right: 6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
+    
+}
+.testimonial-cards{
+    height: 55vh;
+    margin-right: 2rem;
+    background-color:  #f5f6fb;
+    padding: 3rem 2rem ;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    margin-bottom: 0rem; 
+}
+
+#testimonials div img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50% 50%;
+    
+}
+#testimonials p{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#testimonials h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight:600;
+}
+.testimonials-description{
+    padding: 2rem 0rem;
+}
+#testimonials div:hover{
+    box-shadow: 0px 10px 30px -15px lightgray ;
+}
+/*fifth section*/
+#section-5{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 67% 33%;
+}
+#left{
+    background-image: url('https://mobirise.com/extensions/organicamp/assets/images/19.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#right{
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0;
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8rem 7rem;
+}
+#right h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+#right p{
+    padding-top: 1.2rem;
+    padding-bottom: 3.5rem;
+    line-height: 1.5rem;
+    color: rgb(114, 113, 113);
+    font-size: 1em;
+    text-align: center;
+}
+#right input{
+    background-color: white;
+    border: none;
+    outline: none;
+    width: 15vw;
+    padding: 1rem 0rem 1rem 1rem ;
+    font-size: 1rem;
+    font-weight: bold;
+    color:rgb(138, 136, 136) ;
+    
+    
+}
+#right input:focus{
+    color:rgb(138, 136, 136) ;
+}
+#right button{
+    margin-top: 1rem;
+    background-color:  #f69dad;
+    padding: 1rem 2rem;
+    text-align: center;
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform:uppercase;
+    margin-left: 0;
+    border-radius: 0.2rem;
+}
+#right button:hover{
+    border: 1px solid #f69dad;
+    background-color: white;
+    color: #f69dad;
+}
+/*sixth section*/
+#section-6{
+    height: 50vh;
+    background-color: rgb(233, 245, 242);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+#section-6 div{
+    text-align: center;
+    padding-top: 6rem;
+}
+#section-6 div h1{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#section-6 div p{
+    font-family: cursive;
+    font-style: italic;
+    padding-top: 0.5rem;
+    color: #5acda6;
+}
+/*seventh section*/
+#section-7{
+    margin-top: 0vh;
+    background-color: white;
+    height: 100vh;
+    text-align: center;
+}
+#section-7 p{
+    padding:4rem;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #8b8b99;
+}
+#hrule{
+    width: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: rgb(243, 218, 209);
+    margin-bottom: 3rem;
+}
+/*eight section*/
+#section-8{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 0rem 6rem 6rem 6rem;
+}
+#section-8 h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.add-info{
+    color: gray;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#section-8 h2{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.inputs{
+    width: 25rem;
+    outline: none;
+    border: 1px solid lightgrey;
+    padding: 1.2rem 1rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+}
+.inputs:focus{
+    color: gray;
+}
+#submit-button{
+    background-color: rgb(170, 210, 54);
+    color: white;
+    padding: 0.8rem 2.5rem ;
+    border-radius: 0.2rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+#submit-button:hover{
+    cursor: pointer;
+}
+footer{
+    height: 12vh;
+    background-color: rgb(37, 36, 36);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer p{
+    padding-top:5vh;
+}
+@media screen and (max-width:600px){
+    
+    #entire-body{
+        max-width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center, center;
+        overflow-x: hidden;
+    }
+    #top-nav{
+        height: 7vh;
+        position: sticky;
+        top: 0px;
+    }
+    #topnav-links{
+        margin-right: 2rem;
+    }
+    .text-links{
+        display: none;
+    }
+    #first-section{
+        
+        height: 92vh;
+    }
+    #first-section h1{
+       
+        font-size: 2rem;
+        margin: -1rem -2rem 0rem -1.5rem ;
+    }
+    #section-2{
+        grid-template-columns: auto;
+        height: 250vh;
+    }
+    #section-2 div{
+        height: 30vh;
+        width: 100%;
+        margin: 0;
+        
+    }
+    #section-2 div p{
+        margin-left: -2rem;
+        margin-right: 7rem;
+    }
+    #section-2 div i,#section-2 div h1{
+        margin-left: -6rem;
+        margin-right: auto;
+    }
+    #section-3{
+        height: 100rem;
+    }
+    #section-3 #definition{
+        margin-top: -20rem;
+        grid-template-columns: auto;
+        
+    }
+    #section-3 #definition div{
+        padding-bottom: 0.2rem;
+    }
+    #section-3 #definition p{
+        margin-left: -4rem;
+        margin-right: -4rem;
+    }
+    #section-4{
+        height: 230vh;
+        margin-bottom: 0rem;
+    }
+    .description {
+        margin-left: -1rem;
+        height: 5rem;
+    }
+    #section-4 #testimonials{
+        grid-template-columns: auto;
+    }
+    #testimonials{
+        position: relative;
+        margin-top: -18rem;
+    }
+    #testimonials .testimonial-cards{
+        height: 18rem;
+        width:135%;
+        margin-left: -7rem;
+        margin-right: 0rem;
+    }
+    #section-5{
+        position: relative;
+        top: -3rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 60% 50%;
+    }
+    #right{
+        text-align: left;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    #right h1,#right p{
+        text-align: left;
+        padding-left: 0rem;
+    }
+    #right input{
+        width: 32rem;
+    }
+    #section-6{
+        margin-top: 0rem;
+        grid-template-columns: auto;
+        height: 70vh;
+    }
+    #section-6 div{
+        margin-top: 1rem;
+        padding-top: 0rem;
+    }
+    #section-7 iframe{
+        width: 100%;
+    }
+    #section-8{
+        grid-template-columns: auto;
+        margin-top:-10rem ;
+        text-align: left;
+        margin-left: 0rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .inputs{
+        width: 90%;
+    }
+}
+    @media screen and (max-width:768px){
+        #entire-body{
+            max-width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center, center;
+            overflow-x: hidden;
+        }
+        #top-nav{
+            height: 7vh;
+            position: sticky;
+            top: 0px;
+        }
+        #topnav-links{
+            margin-right: 2rem;
+        }
+        .text-links{
+            display: none;
+        }
+        #first-section{
+            
+            height: 92vh;
+        }
+        #first-section h1{
+           
+            font-size: 2rem;
+            margin: -1rem -2rem 0rem -1.5rem ;
+        }
+        #section-2{
+            grid-template-columns: auto;
+            height: 250vh;
+        }
+        #section-2 div{
+            height: 30vh;
+            width: 100%;
+            margin: 0;
+            
+        }
+        #section-2 div p{
+            margin-left: -2rem;
+            margin-right: 7rem;
+        }
+        #section-2 div i,#section-2 div h1{
+            margin-left: -6rem;
+            margin-right: auto;
+        }
+        #section-3{
+            height: 100rem;
+        }
+        #section-3 #definition{
+            margin-top: -20rem;
+            grid-template-columns: auto;
+            
+        }
+        #section-3 #definition div{
+            padding-bottom: 0.2rem;
+        }
+        #section-3 #definition p{
+            margin-left: -4rem;
+            margin-right: -4rem;
+        }
+        #section-4{
+            height: 230vh;
+            margin-bottom: 0rem;
+        }
+        .description {
+            margin-left: -1rem;
+            height: 5rem;
+        }
+        #section-4 #testimonials{
+            grid-template-columns: auto;
+        }
+        #testimonials{
+            position: relative;
+            margin-top: -18rem;
+        }
+        #testimonials .testimonial-cards{
+            height: 18rem;
+            width:135%;
+            margin-left: -7rem;
+            margin-right: 0rem;
+        }
+        #section-5{
+            position: relative;
+            top: -3rem;
+            display: grid;
+            grid-template-columns: none;
+            grid-template-rows: 60% 50%;
+        }
+        #right{
+            text-align: left;
+            padding-top: 1rem;
+            padding-left: 1rem;
+        }
+        #right h1,#right p{
+            text-align: left;
+            padding-left: 0rem;
+        }
+        #right input{
+            width: 32rem;
+        }
+        #section-6{
+            margin-top: 0rem;
+            grid-template-columns: auto;
+            height: 70vh;
+        }
+        #section-6 div{
+            margin-top: 1rem;
+            padding-top: 0rem;
+        }
+        #section-7 iframe{
+            width: 100%;
+        }
+        #section-8{
+            grid-template-columns: auto;
+            margin-top:-10rem ;
+            text-align: left;
+            margin-left: 0rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .inputs{
+            width: 90%;
+        }
+    }
+@media  screen and (max-width:900px) {
+    #entire-body{
+        max-width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center, center;
+        overflow-x: hidden;
+    }
+    #top-nav{
+        height: 7vh;
+        position: sticky;
+        top: 0px;
+    }
+    #topnav-links{
+        margin-right: 2rem;
+    }
+    .text-links{
+        display: none;
+    }
+    #first-section{
+        
+        height: 92vh;
+    }
+    #first-section h1{
+       
+        font-size: 3rem;
+        margin: -1rem 0rem 0rem -1.5rem ;
+    }
+    #section-2{
+        grid-template-columns: auto;
+        height: 250vh;
+    }
+    #section-2 div{
+        height: 30vh;
+        width: 100%;
+        margin: 0;
+        
+    }
+    #section-2 div p{
+        margin-left: -2rem;
+        margin-right: 7rem;
+    }
+    #section-2 div i,#section-2 div h1{
+        margin-left: -6rem;
+        margin-right: auto;
+    }
+    #section-3{
+        height: 100rem;
+    }
+    #section-3 #definition{
+        margin-top: -20rem;
+        grid-template-columns: auto;
+        
+    }
+    #section-3 #definition div{
+        padding-bottom: 0.2rem;
+    }
+    #section-3 #definition p{
+        margin-left: -4rem;
+        margin-right: -4rem;
+    }
+    #section-4{
+        height: 230vh;
+        margin-bottom: 0rem;
+    }
+    .description {
+        margin-left: -1rem;
+        height: 5rem;
+    }
+    #section-4 #testimonials{
+        grid-template-columns: auto;
+    }
+    #testimonials{
+        position: relative;
+        margin-top: -18rem;
+    }
+    #testimonials .testimonial-cards{
+        height: 18rem;
+        width:135%;
+        margin-left: -7rem;
+        margin-right: 0rem;
+    }
+    #section-5{
+        position: relative;
+        top: -3rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 60% 50%;
+    }
+    #right{
+        text-align: left;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    #right h1,#right p{
+        text-align: left;
+        padding-left: 0rem;
+    }
+    #right input{
+        width: 32rem;
+    }
+    #section-6{
+        margin-top: 0rem;
+        grid-template-columns: auto;
+        height: 70vh;
+    }
+    #section-6 div{
+        margin-top: 1rem;
+        padding-top: 0rem;
+    }
+    #section-7 iframe{
+        width: 100%;
+    }
+    #section-8{
+        grid-template-columns: auto;
+        margin-top:-10rem ;
+        text-align: left;
+        margin-left: 0rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .inputs{
+        width: 90%;
+    }
+}
+@media screen and (max-width:1200px) {
+    #entire-body{
+        max-width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center, center;
+        overflow-x: hidden;
+    }
+    #top-nav{
+        height: 7vh;
+        position: sticky;
+        top: 0px;
+    }
+    #topnav-links{
+        margin-right: 2rem;
+    }
+   
+    #first-section{
+        
+        height: 92vh;
+    }
+    #first-section h1{
+       
+        font-size: 2rem;
+        margin: 0rem 0rem 0rem 0rem ;
+    }
+    #section-2{
+        grid-template-columns: auto;
+        height: 250vh;
+    }
+    #section-2 div{
+        height: 30vh;
+        width: 100%;
+        margin: 0;
+        
+    }
+    #section-2 div p{
+        margin-left: -2rem;
+        margin-right: 7rem;
+    }
+    #section-2 div i,#section-2 div h1{
+        margin-left: -6rem;
+        margin-right: auto;
+    }
+    #section-3{
+        height: 100rem;
+    }
+    #section-3 #definition{
+        margin-top: -20rem;
+        grid-template-columns: auto;
+        
+    }
+    #section-3 #definition div{
+        padding-bottom: 0.2rem;
+    }
+    #section-3 #definition p{
+        margin-left: -4rem;
+        margin-right: -4rem;
+    }
+    #section-4{
+        height: 230vh;
+        margin-bottom: 0rem;
+    }
+    .description {
+        margin-left: -1rem;
+        height: 5rem;
+    }
+    #section-4 #testimonials{
+        grid-template-columns: auto;
+    }
+    #testimonials{
+        position: relative;
+        margin-top: -18rem;
+    }
+    #testimonials .testimonial-cards{
+        height: 18rem;
+        width:135%;
+        margin-left: -7rem;
+        margin-right: 0rem;
+    }
+    #section-5{
+        position: relative;
+        top: -3rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 60% 50%;
+    }
+    #right{
+        text-align: left;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    #right h1,#right p{
+        text-align: left;
+        padding-left: 0rem;
+    }
+    #right input{
+        width: 32rem;
+    }
+    #section-6{
+        margin-top: 0rem;
+        grid-template-columns: auto;
+        height: 70vh;
+    }
+    #section-6 div{
+        margin-top: 1rem;
+        padding-top: 0rem;
+    }
+    #section-7 iframe{
+        width: 100%;
+    }
+    #section-8{
+        grid-template-columns: auto;
+        margin-top:-10rem ;
+        text-align: left;
+        margin-left: 0rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .inputs{
+        width: 90%;
+    }
+    
+}
